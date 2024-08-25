@@ -19,4 +19,13 @@ let clearGenLink = function(){
   gen_link_elem.innerHTML = DEFAULT_GEN_LINK_CONTENT;
 }
 
+let genLink = function(url, name){
+  let gen_lnk = document.createElement("a");
+  gen_lnk.href = url;
+  gen_lnk.target = "_blank";
+  gen_lnk.rel = "noopener noreferrer";
+  gen_link_elem.innerHTML = name + " 🔗";
+  gen_link_elem.appendChild(gen_lnk);
+}
+
 clearGenLink();
