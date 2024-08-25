@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>E-Commerce Link Utils</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>E-Commerce Link Utils</h1>
+  </header>
+  <article>
+    <p>This is a crude webpage to generate links to listings for sale on different e-commerce sites.  It is simply to make it easier to share them via just their IDs when options such as QR codes are unavailable.</p>
+  </article>
+  <section>
+    <h2>Listing ID</h2>
+    <p>Enter the listing's ID in the text box below.</p>
+    <form id="listing_id_form">
+      <label for="form_input">Listing ID:</label><br>
+      <input type="text" id="form_input" name="form_input"><br>
+      <input type="submit" value="eBay" onclick="formEbaySubmit(event)">
+      <input type="submit" value="(Reset)" onclick="formReset(event)">
+    </form>
+  </section>
+  <section>
+    <h2>Link</h2>
+    <p id="generated_link"></p>
+  </section>
+  <footer>
+    Ian Bui 2024
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
