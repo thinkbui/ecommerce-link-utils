@@ -1,6 +1,8 @@
 const DEFAULT_GEN_LINK_CONTENT = "(pending generation)";
 const EBAY_LINK_NAME = "eBay";
 const EBAY_LINK_BASE = "https://www.ebay.com/itm/";
+const MERCARI_LINK_NAME = "Mercari";
+const MERCARI_LINK_BASE = "https://www.mercari.com/us/item/";
 let gen_link_elem = document.getElementById("generated_link");
 let listing_id_form_input = document.getElementById("form_input");
 let listing_id = "";
