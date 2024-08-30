@@ -15,7 +15,17 @@ const LINK_DATA = {
                                  "url_base": "https://www.walmart.com/ip/",
                                  "url_tail": "",
                                },
-                  }
+                    "Poshmark": {
+                                  "name": "Poshmark",
+                                  "url_base": "https://poshmark.com/listing/",
+                                  "url_tail": "",
+                                },
+                    "Google Shopping": {
+                                         "name": "Google Shopping",
+                                         "url_base": "https://www.google.com/shopping/product/",
+                                         "url_tail": "",
+                                       },
+                 }
 
 let gen_btns_elem = document.getElementById("generated_buttons");
 let gen_link_elem = document.getElementById("generated_link");
@@ -36,6 +46,7 @@ let formReset = function(event){
   listing_id = "";
   listing_id_form_input.value = "";
   clearGenLink();
+  listing_id_form_input.focus();
 }
 
 let clearGenLink = function(){
