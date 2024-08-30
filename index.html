@@ -19,11 +19,13 @@
     <h2>Listing ID</h2>
     <p>Enter the listing's ID in the text box below.</p>
     <form id="listing_id_form">
-      <label for="form_input">Listing ID:</label><br>
-      <input type="text" id="form_input" name="form_input"><br>
+      <label for="form_input">Listing ID:</label>
+      <br />
+      <input type="text" id="form_input" name="form_input">
+      <input type="submit" value="(Reset)" onclick="formReset(event)">
+      <br />
       <span id="generated_buttons"></span>
       <br />
-      <input type="submit" value="(Reset)" onclick="formReset(event)">
     </form>
   </section>
   <section>

@@ -46,6 +46,7 @@ let formReset = function(event){
   listing_id = "";
   listing_id_form_input.value = "";
   clearGenLink();
+  listing_id_form_input.focus();
 }
 
 let clearGenLink = function(){
