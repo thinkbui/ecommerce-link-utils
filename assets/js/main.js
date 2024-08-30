@@ -16,10 +16,15 @@ const LINK_DATA = {
                                  "url_tail": "",
                                },
                     "Poshmark": {
-                                "name": "Poshmark",
-                                "url_base": "https://poshmark.com/listing/",
-                                "url_tail": "",
-                              },
+                                  "name": "Poshmark",
+                                  "url_base": "https://poshmark.com/listing/",
+                                  "url_tail": "",
+                                },
+                    "Google Shopping": {
+                                         "name": "Google Shopping",
+                                         "url_base": "https://www.google.com/shopping/product/",
+                                         "url_tail": "",
+                                       },
                  }
 
 let gen_btns_elem = document.getElementById("generated_buttons");
